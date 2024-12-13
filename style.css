@@ -1,0 +1,316 @@
+/* Variables globales */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #f8f9fa;
+    --text-color: #343a40;
+    --background-color: #ffffff;
+    --btn-hover-color: #0056b3;
+}
+
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin: 0 1rem;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Hero Section */
+.hero {
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 10rem 1rem 5rem;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    display: inline-block;
+    background: #fff;
+    color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: var(--btn-hover-color);
+    color: #fff;
+}
+
+/* Sections */
+section {
+    padding: 4rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+/* Projects */
+.projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.project-card {
+    background: var(--background-color);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.project-card p {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+    color: var(--btn-hover-color);
+}
+
+/* Skills */
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.skills ul li {
+    margin: 0.5rem 1rem;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.skills ul li i {
+    margin-right: 0.5rem;
+}
+
+/* Contact Form */
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    background: var(--background-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background: var(--secondary-color);
+}
+
+.contact form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact form button {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.contact form button:hover {
+    background: var(--btn-hover-color);
+}
+
+/* Footer */
+footer {
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+}
+/* Section Certificats */
+#certificates {
+    background-color: #f8f9fa; /* Couleur de fond légère */
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #certificates h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333; /* Couleur du texte */
+    text-transform: uppercase; /* Mettre en majuscule */
+    letter-spacing: 1px; /* Espacement des lettres */
+  }
+  
+  .certificates-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrer les éléments */
+    gap: 20px; /* Espacement entre les certificats */
+  }
+  
+  .certificate {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre */
+    width: 280px; /* Largeur fixe */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation au survol */
+  }
+  
+  .certificate:hover {
+    transform: translateY(-5px); /* Légère élévation */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Ombre plus forte */
+  }
+  
+  .certificate img {
+    width: 100%; /* L'image occupe toute la largeur */
+    height: auto;
+    border-radius: 5px; /* Coins arrondis */
+    margin-bottom: 15px;
+  }
+  
+  .certificate h3 {
+    font-size: 1.25em;
+    margin: 10px 0;
+    color: #222;
+  }
+  
+  .certificate p {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
